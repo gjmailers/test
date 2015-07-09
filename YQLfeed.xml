@@ -26,7 +26,7 @@
                   <pubDate>{currentTime}</pubDate>                             
                  </channel>
 
-                </rss>;                
+                </rss></xsl:stylesheet>;                
 
              var list = res.children();        
              for each (var entry in list){           
@@ -37,7 +37,7 @@
               feedroot.rss += feeditem;                
              }
              response.object =  feedroot;                         
-            ]]></xsl:stylesheet></execute>
+            ]]></execute>
         </select> 
     
     </bindings>
