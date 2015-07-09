@@ -20,10 +20,12 @@
              var res = new XML (results);
              var currentTime = new Date();
              var feedroot = <rss version="2.0">
+             <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                  <channel>
                   <title>From ODT to RSS feed </title>  
                   <pubDate>{currentTime}</pubDate>                             
                  </channel>
+</xsl:stylesheet>
                 </rss>;                
 
              var list = res.children();        
